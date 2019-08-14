@@ -10,12 +10,12 @@
 - finalDemo.mp4 is the demo video of our project
 - finalReport is the final report
 
-Commands to run:
+##### Commands to run:
 On the workstation:
 - gcc -o historian.out final_historian.c -lpthread    //compile final_historian.c
 - ./historian.out 2500 //run the historian on workstation, the portnum can be different
 
-On the RPi:
+##### On the RPi:
 - make    //compile kernel
 - sudo insmod BTNKernel.ko    //install kernel
 - sudo mknod /dev/Final c 244 0   //create char device ("244" could be different, check with dmesg after install kernel)
@@ -23,6 +23,6 @@ On the RPi:
 - ./final.out 2500    //run the server on RPi, the portnum need to be the same as the one historian uses
 
 
-- Note: final_server.c can run on multiple RTUs and just need to change with different number in getTime() function, which has  
-strcpy(buffer2, "RTU1:  "); 
-                    ^change to different #
+##### Note: 
+- final_server.c can run on multiple RTUs and just need to change to different # in getTime() function, which has  
+strcpy(buffer2, "RTU1:  ");     
