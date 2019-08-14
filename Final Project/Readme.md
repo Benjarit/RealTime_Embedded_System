@@ -1,6 +1,6 @@
 # SCADA System
 
-> A control system architecture that uses computers, networked data communications and graphical user interfaces for high-level process supervisory management
+> A control system architecture that uses computer, embeded devices, networked data communications and graphical user interfaces for high-level process supervisory management
 
 ##### Files:
 - BTNKernel.c is the program which implements the ISR of button in the kernel space
